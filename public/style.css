@@ -1,0 +1,144 @@
+html,body {
+    font-size: 100%;
+    font-family: 'SourceHanSerif-1abda9dcfc1f2cf';
+}
+
+.layout-adminLayout {
+    display: flex;
+    height: 100%;
+}
+
+.layout-siderPosition {
+    margin-top: 256px;
+}
+
+.layout-sider {
+    position: fixed;
+}
+
+.layout-right {
+    margin-left: 256px;
+    width: 100%;
+    padding: 30px 150px;
+}
+
+.layout-article {
+    margin-top: 50px;
+}
+
+.sider-sider {
+    height: 100vh
+}
+
+.upload-upload {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}  
+
+nav {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+nav::before {
+    content: '';
+    margin-right: 10px;
+    border-left: 15px solid #1890ff;
+}
+
+.list-card {
+    padding: 5px;
+    position: relative;
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.list-card:hover .list-icon {
+    display: inline-block;
+}
+
+.list-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.list-icon i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.list-load {
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.ant-form {
+    width: 100%;
+}
+
+#updateColum .ant-input-search {
+    margin-top: 50px;
+}
+
+.result,
+.check-list,
+.article-list {
+    margin-top: 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 30px
+}
+
+.check-list {
+    margin-bottom: 50px;
+}
+
+.result label,
+.check-list label,
+.article-list label {
+    letter-spacing: 2px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.result span,
+.check-list span,
+.article-list span {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.result span:before,
+.check-list span:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    color: #aaa;
+    border-radius: 3px;
+    display: none;
+    font-weight: bold;
+}
+
+.result span:before {
+    content: '+';
+}
+
+.check-list span:before {
+    content: '-';
+}
+
+.result span:hover:before,
+.check-list span:hover:before {
+    display: block;
+}
